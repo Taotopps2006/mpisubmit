@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 """
-Parallel application with simple partitioning (unbalanced load)
+Parallel application with simple partitioning (unbalanced load).
 
-For data (or embarrassingly) parallel problems.
+For data (embarrassingly) parallel problems.
 
 """
 # Fernando Paolo <fpaolo@ucsd.edu>
@@ -15,8 +15,8 @@ from mpi4py import MPI
 
 
 def simple_partitioning(length, num_procs):
-    sublengths = [length/num_procs]*num_procs
-    for i in range(length % num_procs):    # treatment of remainder
+    sublengths = [int(length/num_procs)] * num_procs
+    for i in range(length % num_procs):  # treatment of remainder
         sublengths[i] += 1
     return sublengths
 
