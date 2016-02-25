@@ -1,4 +1,4 @@
-# mpisubmit
+# MPISubmit.py
 
 Simple data parallelization using MPI.
 
