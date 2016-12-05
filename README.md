@@ -8,7 +8,7 @@ Within the code is a description of the few functions needed to write typical pa
 
 `mpi-submit.py` - Parallel application with simple partitioning: **unbalanced load**.
 
-`mpi-submit2.py` - Parallel application with master/slave scheme: **dynamically balanced load**. 
+`mpi-submit2.py` - Parallel application with master/worker scheme: **dynamically balanced load**. 
 
 `jobs.sh` - Example of [PBS](https://en.wikipedia.org/wiki/Portable_Batch_System) script to run the parallel jobs on [HPC](http://www.sdsc.edu/services/hpc/hpc_systems.html). 
 
